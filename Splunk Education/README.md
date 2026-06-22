@@ -6,10 +6,6 @@ Sera feito a certificação completa de Splunk Core Certified User.
 
 <p align="left">
   <img src="https://cdn.simpleicons.org/splunk" alt="Splunk" width="50" height="50"/>
+  <img src="images/splunk-enterprise.png" alt="Splunk Enterprise" width="120">
 </p>
-## Tecnologias
 
-<p align="left">
-  <img src="https://cdn.simpleicons.org/splunk" alt="Splunk Enterprise" width="40"/>
-  <strong>Splunk Enterprise</strong>
-</p>
