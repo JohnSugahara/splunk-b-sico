@@ -149,7 +149,7 @@ O Splunk possui componentes fundamentais de busca:
 ### Exemplo de Splunk Search Language
 
 <div align="center">
-  <img src="images/search.png" width="400">
+  <img src="Images/search.png" width="400">
 </div>
 
 > **#IMPORTANTE**
@@ -157,7 +157,7 @@ O Splunk possui componentes fundamentais de busca:
 > O caractere `|` (**pipe**) é usado antes de um comando na pesquisa. Ele cria uma área de comandos para filtrar ainda mais os resultados.
 
 <div align="center">
-  <img src="images/casesensitive.png" width="400">
+  <img src="Images/casesensitive.png" width="400">
 </div>
 
 O Splunk apenas aplicará *case-sensitive* se o nome digitado tiver um valor correspondente. Por exemplo, o campo `host` da imagem acima precisa ser exatamente igual — caso contrário, falhará.
@@ -179,7 +179,7 @@ O Splunk apenas aplicará *case-sensitive* se o nome digitado tiver um valor cor
 ## O que são Knowledge Objects?
 
 <div align="center">
-  <img src="images/KO.png" width="400">
+  <img src="Images/KO.png" width="400">
 </div>
 
 *Knowledge Objects* são agrupados em **5 categorias**. Eles são úteis por diversos motivos no Splunk:
@@ -198,7 +198,7 @@ O Splunk apenas aplicará *case-sensitive* se o nome digitado tiver um valor cor
 ### Campos (Fields)
 
 <div align="center">
-  <img src="images/KOdi.png" width="400">
+  <img src="Images/KOdi.png" width="400">
 </div>
 
 Alguns campos são automaticamente extraídos dos dados com base no *sourcetype* selecionado. Mas campos adicionais podem ser extraídos manualmente para adicionar mais insights. **Calculated fields** são adicionados aos eventos no *search time* e fazem cálculos baseados nos valores dos campos existentes.
@@ -206,7 +206,7 @@ Alguns campos são automaticamente extraídos dos dados com base no *sourcetype*
 ### Classificações (Classifications)
 
 <div align="center">
-  <img src="images/KOdc.png" width="400">
+  <img src="Images/KOdc.png" width="400">
 </div>
 
 - **Event types:** Permitem categorizar eventos com base nos termos de pesquisa.
@@ -215,7 +215,7 @@ Alguns campos são automaticamente extraídos dos dados com base no *sourcetype*
 ### Enriquecimento (Enrichment)
 
 <div align="center">
-  <img src="images/KOde.png" width="400">
+  <img src="Images/KOde.png" width="400">
 </div>
 
 - **Lookups:** Permitem adicionar outros campos e valores ao evento que não estão no *indexed data*.
@@ -224,7 +224,7 @@ Alguns campos são automaticamente extraídos dos dados com base no *sourcetype*
 ### Normalização (Normalization)
 
 <div align="center">
-  <img src="images/KOdn.png" width="400">
+  <img src="Images/KOdn.png" width="400">
 </div>
 
 - **Tags:** Permitem designar nomes descritivos para pares chave-valor. São como legendas para seus dados, permitindo pesquisar eventos com valores de campo específicos.
@@ -233,7 +233,7 @@ Alguns campos são automaticamente extraídos dos dados com base no *sourcetype*
 ### Data Models
 
 <div align="center">
-  <img src="images/KOdm.png" width="400">
+  <img src="Images/KOdm.png" width="400">
 </div>
 
 **Data models** são datasets estruturados de forma hierárquica, que podem consistir de eventos, pesquisas e/ou transações.
@@ -247,13 +247,13 @@ E se precisarmos rodar a mesma pesquisa novamente no futuro, ou compartilhá-la 
 **Exemplo:** Pesquisar eventos de falha de senha e adicionar contexto geográfico.
 
 <div align="center">
-  <img src="images/geocontext.png" width="400">
+  <img src="Images/geocontext.png" width="400">
 </div>
 
 Adicionando um pipe com o comando `iplocation src_ip`, conseguimos adicionar contexto geográfico nos eventos retornados. Novos campos serão adicionados na barra lateral.
 
 <div align="center">
-  <img src="images/fieldc.png" width="400">
+  <img src="Images/fieldc.png" width="400">
 </div>
 
 Expandindo o campo **Country**, conseguimos ver os top 10 acessos por países e também 4 links de report:
@@ -266,7 +266,7 @@ Expandindo o campo **Country**, conseguimos ver os top 10 acessos por países e 
 **Top Values:** Acrescenta o `top command` na pesquisa e permite visualizar os dados em gráfico de barras, coluna, círculo, entre outros.
 
 <div align="center">
-  <img src="images/geostats.png" width="400">
+  <img src="Images/geostats.png" width="400">
 </div>
 
 Substituindo o comando na pesquisa pelo `geostats`, podemos usar o contexto do `iplocation command` para plotar os dados em um mapa *cluster* ou *choropleth*.
@@ -278,7 +278,7 @@ Ao salvar, você verá opções de **Título**, **Descrição**, **Conteúdo** e
 ### Permissões de Report
 
 <div align="center">
-  <img src="images/editperm.png" width="400">
+  <img src="Images/editperm.png" width="400">
 </div>
 
 > **#IMPORTANTE**
@@ -293,7 +293,7 @@ Em **Run As**, você pode configurar o report para ser rodado como o dono do rep
 ### Agendamento de Reports
 
 <div align="center">
-  <img src="images/editsche.png" width="400">
+  <img src="Images/editsche.png" width="400">
 </div>
 
 Usando o **Edit Schedule**, é possível configurar reports para serem rodados em intervalos de tempo. Isso pode:
@@ -310,7 +310,7 @@ Usando o **Edit Schedule**, é possível configurar reports para serem rodados e
 Visualizações ajudam a contar uma história melhor com seus dados. O Splunk permite visualizá-los de diversas formas.
 
 <div align="center">
-  <img src="images/dashpanel.png" width="400">
+  <img src="Images/dashpanel.png" width="400">
 </div>
 
 Ao salvar uma visualização como dashboard, você tem duas opções de frameworks:
@@ -325,7 +325,7 @@ Em **Advanced Panel Settings**, você verá que o painel é alimentado por *Inli
 Você pode criar novas pesquisas para enriquecer o dashboard, como ver tentativas de login por tempo na última semana.
 
 <div align="center">
-  <img src="images/addpanel.png" width="400">
+  <img src="Images/addpanel.png" width="400">
 </div>
 
 Em **+Add Panel**, você pode adicionar novos painéis sem precisar voltar à pesquisa. Selecionando por **Report**, é possível adicionar um report previamente criado (como o de geocontext) ao dashboard.
@@ -345,7 +345,7 @@ Em **More Actions**, você pode editar o drilldown e configurar o `onclick` para
 No menu de **3 pontos** de um dashboard, é possível cloná-lo no **Dashboard Studio**.
 
 <div align="center">
-  <img src="images/dashstudio.png" width="400">
+  <img src="Images/dashstudio.png" width="400">
 </div>
 
 Ao criar um dashboard no Studio, escolha entre dois layouts:
@@ -356,7 +356,7 @@ Ao criar um dashboard no Studio, escolha entre dois layouts:
 O Studio permite personalizar o dashboard selecionando e arrastando as bordas dos painéis, sendo mais visual e intuitivo que o editor XML do dashboard clássico.
 
 <div align="center">
-  <img src="images/comp.png" width="400">
+  <img src="Images/comp.png" width="400">
 </div>
 
 | Modo       | Característica Principal                   |
