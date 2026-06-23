@@ -2,7 +2,7 @@
 
 ## Splunk Knowledge Object
 
-### Objetivos do Curso
+### O que são Knowledge Objects?
 
 Por agora sabemos que Knowledge Objects são ferramentas que auxiliam os usuarios a descobrir e analisar dados.
 Nesse modulo vamos entrar mais a fundo na criação e manipulação de Knowledge Objects!
@@ -130,5 +130,37 @@ events, searches e/ou transactions.
 
 Data models podem ser utilizados em Pivot, permitindo usuarios explorar dados em uma interface grafica sem nunca ter que entender SSL(Splunk Search Language).
 
+### Knowledge Objects Settings
+
+Criar tipos especificos de Knowledge Objects é fora do escopo deste modulo, nesse segmento vamos focar nas caracteristicas que se aplicam em todos os Knowledge Objects.
+
+#### Desenvolver convenções de nomeação(Naming Conventions)
+
+Desenvolver convenções de nomeação vai nos ajudar e nossos usuarios a saber extamente o que cada Knowledge Object faz, e vai ajudar nosso Splunk Toolbox organizada.
+É recomendado que você nomeie objetos usando seis chaves segmentadas.
+Grupo, Tipo, Plataforma, Categoria, Tempo e Descrição.
+
+<div align="center">
+  <img src="Images/nomea.png" width="400">
+</div>
+
+Exemplo, se tivessemos uma Security-Focused Workflow Action que estariamos criando para o time de operações que iria retornar informações sobre o IP de um usuário, nos utilizariamos um **grupo** de "OPS" para operações, um **tipo**  "WFA" ou workflow action, uma **plataforma** de "Network", uma **categoria** de "Segurança", ja que a workflow action não é baseada em tempo, vamos usar "na" em tempo, e uma **descrição** escrita como "IPwhoisAction". 
+
+Agora olhando para nossos Knowledge Objects, podemos ver o que eles fazem, para que servem e o que esperar deles.
+
+#### Permissions
+
+<div align="center">
+  <img src="Images/psa.png" width="400">
+</div>
+
+Permissões possuem uma função importante na compartilhação de knowledge objects no Splunk.
+Existem três maneiras predefinidas que um knowledge object pode ser compartilhado para outros usuarios.
+Quando um usuario cria um knowledge object ele é automaticamente settado como privado, apenas disponivel para o usuario que o criou.
+Power e Admin podem criar knowledge objects que podem ser compartilhados por todos usuarios do APP, eles podem também permitir outras funções a lerem e editar o objeto ou até mesmo esconder eles por remover permissões de leitura e edição.
+E o Admin é a unica função que possui permissão para deixar Knowledge Objects disponivel para TODOS os apps.
+Admins também podem ler e editar objetos criados por qualquer função.
+
+### Menaging Knowledge Objects
 
 
